@@ -1,0 +1,40 @@
+# Source files
+src/
+tsconfig.json
+tsup.config.ts
+
+# Development files
+.git/
+.gitignore
+.vscode/
+test-app/
+node_modules/
+*.log
+
+# Build artifacts (keep only dist)
+dist/*.map
+dist/*.d.cts.map
+
+# Documentation (keep essential files)
+docs/
+*.md
+!README.md
+!LICENSE
+!SETUP.md
+!PUBLISH_CHECKLIST.md
+
+# Test files
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+
+# Config files
+.eslintrc*
+.prettierrc*
+jest.config.*
+babel.config.*
+
+# OS files
+.DS_Store
+Thumbs.db

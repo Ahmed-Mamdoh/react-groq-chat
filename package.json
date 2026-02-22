@@ -1,0 +1,75 @@
+{
+  "name": "react-groq-chat",
+  "version": "1.0.1",
+  "description": "A modern, customizable React component for integrating a chatbot with the Groq API",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "SETUP.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "chatbot",
+    "groq",
+    "api",
+    "typescript",
+    "tailwindcss",
+    "radix-ui",
+    "ai-chat",
+    "groq-api",
+    "react-component",
+    "chat-interface",
+    "markdown-support"
+  ],
+  "author": {
+    "name": "Ahmed Mamdoh",
+    "email": "your-email@example.com",
+    "url": "https://github.com/your-username"
+  },
+  "license": "ISC",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/react-groq-chat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/react-groq-chat/issues"
+  },
+  "homepage": "https://github.com/your-username/react-groq-chat#readme",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "@radix-ui/react-popover": "^1.0.7",
+    "clsx": "^2.1.0",
+    "tailwind-merge": "^2.2.0",
+    "react-icons": "^5.0.1",
+    "react-markdown": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
