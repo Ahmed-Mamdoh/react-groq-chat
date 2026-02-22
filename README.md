@@ -104,7 +104,7 @@ ISC License - see [LICENSE](LICENSE) file for details.
 
 For issues and questions:
 - Open an issue on GitHub
-- Check the [documentation](https://github.com/your-username/react-groq-chat)
+- Check the [documentation](https://github.com/Ahmed-Mamdoh/react-groq-chat)
 
 ---
 
