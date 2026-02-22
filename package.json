@@ -1,6 +1,6 @@
 {
   "name": "react-groq-chat",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A modern, customizable React component for integrating a chatbot with the Groq API",
   "main": "dist/index.js",
   "module": "dist/index.js",
