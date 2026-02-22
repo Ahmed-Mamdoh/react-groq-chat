@@ -28,8 +28,11 @@ function MessageList({
             <div key={index} className="flex justify-start">
               <div
                 dir="auto"
-                style={{ unicodeBidi: "isolate" }}
-                className={`max-w-[95%] rounded-2xl rounded-bl-none bg-[${userMessageBgColor}] px-4 py-2 text-start text-sm shadow-sm`}
+                style={{
+                  unicodeBidi: "isolate",
+                  backgroundColor: userMessageBgColor,
+                }}
+                className="max-w-[95%] rounded-2xl rounded-bl-none px-4 py-2 text-start text-sm shadow-sm"
               >
                 {item.content.replace(/\[\[.*?\]\]/g, "")}
               </div>
@@ -40,8 +43,12 @@ function MessageList({
             <div key={index} className="flex justify-end">
               <div
                 dir="rtl"
-                style={{ unicodeBidi: "isolate", display: "inline-block" }}
-                className={`bg-[${assistantMessageBgColor}] max-w-[95%] rounded-2xl rounded-br-none px-4 py-2 text-start text-sm wrap-break-word whitespace-normal text-white shadow-md`}
+                style={{
+                  unicodeBidi: "isolate",
+                  display: "inline-block",
+                  backgroundColor: assistantMessageBgColor,
+                }}
+                className="max-w-[95%] rounded-2xl rounded-br-none px-4 py-2 text-start text-sm wrap-break-word whitespace-normal text-white shadow-md"
               >
                 <Markdown>{item.content}</Markdown>
               </div>
