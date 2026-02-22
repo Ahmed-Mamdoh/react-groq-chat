@@ -64,7 +64,17 @@ export function ChatBot({
         triggerBottomPosition={triggerBottomPosition}
       />
       <PopoverContent
-        className={`bg-[${contentBgColor}] mr-[${contentRightPosition}px] h-[${contentHeight}px] max-h-[${contentHeight}px] w-[${contentWidth}px] border-[${contentBorder}px] border-[${contentBorderColor}] text-[${textColor}] shadow-2xl ring-1 ring-white/10 rounded-[${contentBorderRoundness}px]`}
+        className="shadow-2xl ring-1 ring-white/10"
+        style={{
+          backgroundColor: contentBgColor,
+          marginRight: `${contentRightPosition}px`,
+          height: `${contentHeight}px`,
+          maxHeight: `${contentHeight}px`,
+          width: `${contentWidth}px`,
+          border: `${contentBorder}px solid ${contentBorderColor}`,
+          color: textColor,
+          borderRadius: `${contentBorderRoundness}px`,
+        }}
       >
         <div className="flex h-full flex-col gap-4 p-2">
           <div className="min-h-0 flex-1">
