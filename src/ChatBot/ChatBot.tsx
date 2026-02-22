@@ -5,7 +5,7 @@ import MessageList from "./components/MessageList";
 import ChatInput from "./components/ChatInput";
 
 // Custom popover components to avoid shadcn dependency
-const Popover = PopoverPrimitive.Root;
+const Popover = PopoverPrimitive.Popover;
 const PopoverContent = PopoverPrimitive.Content;
 
 export type ChatBotProps = {
