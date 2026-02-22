@@ -34,7 +34,7 @@ function MessageList({
                 }}
                 className="max-w-[95%] rounded-2xl rounded-bl-none px-4 py-2 text-start text-sm shadow-sm"
               >
-                {item.content.replace(/\[\[.*?\]\]/g, "")}
+                {item.content}
               </div>
             </div>
           );
@@ -58,7 +58,12 @@ function MessageList({
       })}
       {isLoading && (
         <div className="flex justify-end">
-          <div className="bg-red/90 rounded-2xl rounded-br-none px-4 py-2 text-white shadow-md">
+          <div
+            style={{
+              backgroundColor: assistantMessageBgColor,
+            }}
+            className=" rounded-2xl rounded-br-none px-4 py-2 text-white shadow-md"
+          >
             <span className="loading loading-dots loading-xs"></span>
           </div>
         </div>
